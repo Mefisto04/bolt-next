@@ -4,7 +4,7 @@ import { BASE_PROMPT } from '../../../lib/prompts';
 import { basePrompt as nodeBasePrompt } from '../../../lib/defaults/node';
 import { basePrompt as reactBasePrompt } from '../../../lib/defaults/react';
 
-const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY || "");
+const genAI = new GoogleGenerativeAI("AIzaSyAGC6ratkmWs5Esxyz7k4qXE8rD-FuQDtQ");
 const model = genAI.getGenerativeModel({
     model: "gemini-pro",
     generationConfig: {
