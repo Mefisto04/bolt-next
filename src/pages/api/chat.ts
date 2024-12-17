@@ -3,7 +3,7 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { getSystemPrompt } from "@/lib/prompts";  // Adjust path as needed
 
-const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY!);
+const genAI = new GoogleGenerativeAI("AIzaSyAGC6ratkmWs5Esxyz7k4qXE8rD-FuQDtQ");
 const model = genAI.getGenerativeModel({
     model: "gemini-pro",
     generationConfig: {
